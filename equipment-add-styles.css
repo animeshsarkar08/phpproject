@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    background: url('background/equipment-back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.equipment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-form label {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.equipment-form input,
+.equipment-form select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: #90CAF9;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #64B5F6;
+}
+.error{
+    color: red;
+    font-size:16px;
+}

@@ -1,0 +1,136 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f9fa;
+margin: 0;
+padding: 20px;
+background:url('background/equipment-back.jpg') no-repeat center center fixed;
+background-size:cover;
+}
+body::before {
+        content: "";
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        right: 100px;
+        bottom: 100px;
+        background: inherit;
+        filter: blur(90%);
+        z-index: -1;
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+background:rgba(0,0,0,0.7);
+}
+
+header {
+display: flex;
+justify-content: space-between;align-items: center;
+margin-bottom: 20px;
+}
+.header-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow form to take remaining space */
+}
+.search-bar {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-right: 10px;
+    flex: 1; /* Take remaining space */
+    max-width:300px;
+}
+
+.search-btn, .edit-btn,.add-btn,.home-btn,.delete-btn{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: #90CAF9;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    position:relative;
+}
+.search-btn:hover, .edit-btn:hover, .add-btn:hover,.home-btn:hover, .delete-btn:hover{
+    background-color: #64B5F6;
+}
+.edit-btn {
+    margin-right: 10px; /* Add space between edit and add button */
+}
+.home-btn {
+    margin-left: 10px; /* Add space between edit and add button */
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.equipment-details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 23px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity */
+    border-radius: 8px;	
+    transition: transform 0.8s ease; /* Smooth transition for hover effects */
+}
+.equipment-details:hover {
+    transform: scale(1.1); /* Example: Zoom effect on hover */
+}
+
+.image-placeholder {
+   flex: 0 0 auto; /* Ensure the image placeholder does not grow or shrink */
+   width: 300px; /*300px Set a fixed width for the image placeholder */
+   height: 70%;
+   overflow:hidden;
+}
+.image-placeholder img { 
+ max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any default spacing issues */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+.image-placeholder:hover img {
+    transform: scale(1.1); /* Example: Zoom effect on hover */
+}
+.details {
+margin-top:10px;
+margin-left:50px;
+margin-bottom:10px;
+flex: 1 1  auto;
+}
+
+.details p {
+color:white;
+margin-top: 3px;
+font-size:17px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.additional-info {
+margin-top: 50px;
+}
+.additional-info p {
+color:white;
+font-size:17px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 5px;
+margin-bottom: 15px;
+}

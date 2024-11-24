@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    background: url('background/equipment-back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: inherit;
+    filter: blur(90%);
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+.equipment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-form label {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.equipment-form input,
+.equipment-form select {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.equipment-form input[type="number"] {
+    -moz-appearance: textfield; /* Hides the number input spinner in Firefox */
+}
+
+.equipment-form input[type="number"]::-webkit-inner-spin-button,
+.equipment-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.equipment-form select {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.equipment-form button {
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #90CAF9;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.equipment-form button:hover {
+    background-color: #64B5F6;
+}
+
+.error-message,
+.success-message {
+    color: #ff0000; /* Red for errors */
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.success-message {
+    color: #00ff00; /* Green for success */
+}
+

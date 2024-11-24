@@ -1,0 +1,65 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://thumbs.dreamstime.com/z/bharat-coking-coal-limited-building-bccl-koyla-bhawan-subsidiary-india-dhanbad-253173408.jpg?w=992');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .registration-container {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(190, 190, 190, 0.7); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            backdrop-filter: blur(0.01px); 
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white; 
+        }
+        .registration-container label {
+            color: white; 
+            display: block;
+            margin-bottom: 5px;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="password"] {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+        .registration-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        .registration-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
