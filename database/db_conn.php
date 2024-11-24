@@ -2,10 +2,10 @@
 function getConnection(){
 
 	//constants for connecting database
-	define('DB_HOST','localhost');
-	define('DB_USER','Animesh');
-	define('DB_PASSWD','123456');
-	define('DB_NAME','bccl');
+	define('DB_HOST','mysql.railway.internal');
+	define('DB_USER','root');
+	define('DB_PASSWD','GgylfbpghmVgQUYtvKUXUdYOxlbLYiSM');
+	define('DB_NAME','railway');
  
 	//Creating connection 
 	$conn =  new mysqli(DB_HOST,DB_USER,DB_PASSWD,DB_NAME);
